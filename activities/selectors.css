@@ -2,14 +2,47 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-    color:cadetblue;
+    color:rgb(12, 203, 44);
 }
 footer p {
     color: aquamarine;
 }
 main p {
-    color: brown;
+    color: rgb(242, 32, 214);
 }
 #celestial {
-    color:coral;
+    color:rgb(46, 17, 213);
+}
+.crimson{
+    color:rgb(20, 220, 20)
+}
+
+.bigger {
+    font-size: 15pt;
+
+}
+
+.flashier {
+    color: cornflowerblue;
+    font-size: 14pt;
+}
+
+.highlight {
+    font-style: italic;
+
+}
+
+.flashier {
+    color: cornflowerblue;
+    font-size: 14pt;
+
+}
+
+.highlight {
+    font-style: italic;
+}
+
+.standout {
+    font-weight: 800;
+    
 }
