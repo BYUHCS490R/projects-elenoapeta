@@ -1,0 +1,16 @@
+p {
+    color: blue;
+    font-size: 24pt;
+}
+
+header h1 {
+    color: greenyellow;
+    font-size: 24px;
+}
+main h1 {
+    color: rgb(255, 0, 132);
+}
+
+.white {
+    color: yellow;
+}

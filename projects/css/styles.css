@@ -1,9 +1,9 @@
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Bernard MT Condensed, sans-serif;
   font-size: 16px;
   color: #222;
-  background-color: green#f8faf8;
+  background-color: rgb(241, 22, 22)#f8faf8;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -11,8 +11,8 @@ body {
 
 /* Header */
 header {
-  background-color: #003366;
-  color: white;
+  background-color: #15e42a;
+  color: rgb(58, 11, 188);
   text-align: center;
   padding: 20px;
 }
@@ -58,7 +58,7 @@ main {
 }
 
 .lowlight {
-  color: #777; /* De-emphasized text */
+  color: #ed0f0f; /* De-emphasized text */
   font-style: italic;
 }
 
@@ -76,4 +76,9 @@ footer {
   text-align: center;
   padding: 10px;
   margin-top: 20px;
+}
+
+#peta {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
 }
