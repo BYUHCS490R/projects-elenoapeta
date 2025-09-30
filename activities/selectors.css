@@ -14,7 +14,7 @@ main p {
     color:rgb(46, 17, 213);
 }
 .crimson{
-    color:rgb(20, 220, 20)
+    color:rgb(20, 193, 220)
 }
 
 .bigger {
@@ -23,7 +23,7 @@ main p {
 }
 
 .flashier {
-    color: cornflowerblue;
+    color: rgb(17, 89, 222);
     font-size: 14pt;
 }
 
