@@ -38,15 +38,23 @@ main {
 }
 
 ul {
-  list-style-image: url("../images/custom_bullet.png"); /* Custom bullet ✅ */
+  list-style-image: url("flower.png"); /* Custom bullet ✅ */
 }
 
 img {
   width: 100%;
   max-width: 500px;
-  margin: 10px;
+  margin-left: auto;
+  margin-right: 10px;
   border-radius: 8px;
 }
 body {
   background-color:rgb(32, 28, 6)
 }
+
+.flag {
+  position: relative;
+  display: flex;
+
+}
+
