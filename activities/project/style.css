@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Times New Roman, sans-serif;
   color: #e82282;
   margin: 0;
   background-image: url("../images/bg_repeat.jpg");
@@ -7,14 +7,14 @@ body {
 }
 
 header, footer {
-  background-color: #e4112a;
-  color: rgba(24, 42, 240, 0.546);
+  background-color: #79e80a;
+  color: rgba(24, 24, 24, 0.546);
   text-align: center;
   padding: 15px;
 }
 
 nav {
-  background-color: #5508da;
+  background-color: #f5f4e6;
   text-align: center;
   padding: 10px;
 }
