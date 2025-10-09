@@ -27,7 +27,7 @@ nav a {
 }
 
 nav a.active {
-  color: yellow; /* Highlight current page ✅ */
+  color: rgb(60, 23, 228); /* Highlight current page ✅ */
 }
 
 main {
@@ -43,10 +43,10 @@ ul {
 
 img {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   margin: 10px;
   border-radius: 8px;
 }
 body {
-  background-color:rgb(230, 197, 12)
+  background-color:rgb(32, 28, 6)
 }
