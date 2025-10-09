@@ -32,9 +32,12 @@ nav a.active {
 
 main {
   padding: 20px;
-  background-image: url("../images/bg_decor.jpg"); /* Non-repeating ✅ */
+}
+
+.flag {
+  background-image: url("tongaflg.jpg"); /* Non-repeating ✅ */
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right bottom;
 }
 
 ul {
@@ -51,10 +54,3 @@ img {
 body {
   background-color:rgb(32, 28, 6)
 }
-
-.flag {
-  position: relative;
-  display: flex;
-
-}
-
