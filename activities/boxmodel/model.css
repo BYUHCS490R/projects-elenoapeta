@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;    
+}
+header {
+    background-color: rgb(232, 163, 59);
+    padding: 50px;
+    margin: 25px;
+}
+header h1 {
+    background-color: cadetblue;
+    border-style: solid;
+    border-color: black;
+    border-width: 20px;
+    text-align: center;
+}
+nav {
+    background-color: rgb(179, 179, 243);
+    border: 5px dashed rgb(84, 28, 195);
+    padding: 20px 40px;
+}
+main h1 {
+    border: 3px dotted blue;
+    width: 50%; 
+    padding-top: 5px;
+    padding-bottom:25;
+    padding-left: 30;
+    padding-right: 20px;
+}
+main p {
+    border: think solid black;
+    padding: 20px 20px 30px 40px;
+}
