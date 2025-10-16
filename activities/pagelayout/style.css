@@ -1,0 +1,150 @@
+/* Wrapper centers the content */
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #fff7e6;
+    border: 4px solid #d622af;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Header with background image */
+header {
+    background-image: url('beach-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+    background-origin: padding-box;
+    color: rgb(239, 18, 18);
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #d4c6c6;
+}
+
+/* Title Styling */
+header h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: 'Georgia', serif;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #fff7e6;
+    color: #2c0fe8;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #88e65c;
+    transition: all 0.3s ease;
+}
+
+/* Pseudo-class for hover */
+nav a:hover {
+    background-color: #004f6b;
+    color: #fff;
+    box-shadow: 0 0 8px #fff;
+}
+
+/* Main Content */
+main {
+    background-color: #e6e9ff;
+    border: 2px solid #006b5c;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    line-height: 1.6;
+    text-align: justify;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Subheading */
+main h2 {
+    background-color: #b2f0e3;
+    display: inline-block;
+    padding: 6px 15px;
+    font-size: 1.4em;
+    color: #ee0c2e;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Figure floated left */
+.photo-left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 300px;
+    border: 3px solid #ef3b09;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 3px 3px 8px rgba(187, 16, 124, 0.3);
+}
+
+.photo-left img {
+    width: 100%;
+    display: block;
+}
+
+figcaption {
+    background-color: #89ed96;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 5px;
+    color: #004d40;
+    font-style: italic;
+}
+
+/* Text styling */
+p {
+    color: #00332a;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-image: url('footer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .photo-left {
+        float: none;
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
