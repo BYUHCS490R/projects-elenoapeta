@@ -10,3 +10,23 @@ body {
     background-color: cadetblue;
 
 }
+#wrapper {
+    display: grid;
+    grid-template-areas:
+    "top top top"
+    "1side middle rside"
+    "bottom bottom bottom";
+}
+header {
+    grid-area: top;
+
+}
+nav {
+    grid-area: 1side;
+}
+main {
+    grid-area: middle;
+}
+footer {
+    grid-area: bottom;
+}
