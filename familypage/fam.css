@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f8f8f8;
+    background-color: #2ac10f;
 }
 header h1 {
   color: #ed0909; 
@@ -10,8 +10,8 @@ header h1 {
 }
 
 header {
-    background-color: #a61c3c;
-    color: white;
+    background-color: #77709c;
+    color: rgb(195, 32, 32);
     text-align: center;
     padding: 1em;
 }
@@ -66,12 +66,12 @@ main {
     flex: 1 1 300px;
 }
 .card img {
-    width: 100%;
-    border-radius: 10px;
+    width: 40%;
+    border-radius: 4px;
 }
 footer {
-    background-color: #a61c3c;
-    color: white;
+    background-color: #1e1719;
+    color: rgb(175, 44, 44);
     text-align: center;
     padding: 1em;
     margin-top: 1em;
