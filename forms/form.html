@@ -13,20 +13,22 @@
 <main>
         <h1>Forms</h1>
         <form action="formprocess.html" method="post">
-            <div>
-                <lable for="full-name">Full Name</lable>
-                <input type="text" name="fname" id="full-name" placeholder="Full name">
-            </div>
-            <div>
-            <label for="email">Email:</lable>
-            <input type="email" name="email" id="email" value="elenoataimani@gmail.com">
-            </div>
-            <div>
-            <lable for="pass">Password:</lable>
-        <input type="passport" name="pass" id="pass">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                <label for="fname">Full Name:</label>
+                <input type="text" name="fullname" id="full-name" placeholder="Full Name" id="fname">
         </div>
-        <div>
-           <lable for="state">State</lable>
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" name="email" name="fullname" id="fname">
+        </div>
+        <div class="form-row">
+            <label for="pass">Password:</label>
+            <input type="passport" name="pass" id="pass">
+        </div>
+        <div class="form-row">
+           <label for="state">State:</label>
            <select name="state" id="state">
             <option value="blank">---</option>
             <option value="CA">California</option>
@@ -34,23 +36,28 @@
             <option value="UT">Utah</option>
            </select>
         </div>
-        <div>
-            <lable><input type="checkbox" name="checkbox" name="agree"> I agree to the terms.</lable>
+        <div class="check-row">
+            <div class="spacer"></div>
+            <label><input type="checkbox" checked> I agree to the terms</label>
         </div>
-        <div>
-            Gender:
-            <lable><input type="radio" name="gender" value="male">Male</lable>
-            <lable><input type="radio" name="gender" value="female">Female</lable>
+        <div class="check-row">
+            <div class="spacer">Gender:</div>
+            <label><input type="radio" name="gender" value="Male">Male</label>
+            <label><input type="radio" name="gender" value="Female">Female</label>
         </div>
-        <div>
-            <lable for="comments">Comments</lable>
-            <textarea name="submit" value="Sign Up"></textarea>
+        <div class="form-row">
+            <label for="comments">Comments:</label>
+            <textarea name="comment" id="comment">Hello</textarea>
         </div>
-        <input type="submit" value="Sign Up">
-    </form>
+        <div class="form-row">
+            <div class="spacer"></div>
+            <input type="submit" value="Sign Up">
+        </div>
+    </fieldset>
+</form>
 </main>
 <footer>
-        <p>&copy; 2025 Elenoa Taimani</p>
-    </footer> 
+    &copy; 2025 Elenoa Taimani
+</footer> 
 </body>
 </html>
