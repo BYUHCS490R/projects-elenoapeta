@@ -59,5 +59,33 @@
 <footer>
     &copy; 2025 Elenoa Taimani
 </footer> 
+<script>
+    document.getElementById('myForm').addEventListener('submit',function(event) {
+      event.preventDeault();
+      alert("Form Submitted");
+
+      const fullname = document.getElementById('fullname').value;
+      const email = document.getElementById('email').value;
+      const pass = document.getElementById('pass').value;
+      const age = document.getElementById('age').value;
+
+      if (!fullname || !email) {
+        alert("You need a name and email.");
+        return;
+      }
+      if (!age || age <18) {
+        alert("You need to be 18");
+        return;
+      }
+
+      const formData = {
+        name: fullname,
+        email: email,
+        password: password,
+        age: age
+      };
+      console.log(formData);
+    });
+  </script>
 </body>
 </html>

@@ -16,7 +16,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
 .form-row input:not([type='submit']):focus, .form-row select:focus, .form-row textarea:focus {
-    backgrouund-color: white;
+    background-color: white;
 }
 }
 .form-row input[type='submit'] {
