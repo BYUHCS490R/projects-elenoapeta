@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Form Project</h1>
+
+    <form id="myForm">
+      <label>Name
+        <input type="text" id="name">
+      </label>
+
+      <label>Email
+        <input type="email" id="email">
+      </label>
+
+      <label>Age (18–30)
+        <input type="number" id="age">
+      </label>
+
+      <label>Comment
+        <input type="text" id="comment">
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="responseMessage"></p>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    <p id="popupMessage"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
