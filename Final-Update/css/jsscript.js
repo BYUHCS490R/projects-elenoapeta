@@ -1,4 +1,3 @@
-// Highlight current page in nav
 document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll("nav a");
     const path = window.location.pathname.split("/").pop() || "index.html";
@@ -11,8 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
             link.setAttribute("aria-current", "page");
         }
     });
-
-    // Form submission handling
     const form = document.getElementById("repairForm");
     const successMsg = document.getElementById("successMessage");
 
