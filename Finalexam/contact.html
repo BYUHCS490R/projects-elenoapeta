@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact & Booking — Game Hutt Tech Services</title>
+  <meta name="description" content="Booking form to request a repair appointment. Form posts to process.php on the site.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script>
+
+    function validateForm(e){
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const device = document.getElementById('device').value.trim();
+      const desc = document.getElementById('desc').value.trim();
+      let errs = [];
+      if (!name) errs.push('Please enter your name.');
+      if (!email || !email.includes('@')) errs.push('Please enter a valid email address.');
+      if (!device) errs.push('Please enter the device type.');
+      if (!desc) errs.push('Please describe the issue.');
+      if (errs.length){ alert(errs.join('\\n')); e.preventDefault(); return false; }
+      return true;
+    }
+    document.addEventListener('DOMContentLoaded', function(){
+      document.getElementById('bookingForm').addEventListener('submit', validateForm);
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap header-grid">
+      <div><h1>Contact & Book a Repair</h1></div>
+      <nav aria-label="Main navigation">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="repairs.html" class="nav-link">Repair Guides</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="content">
+      <h2>Booking form</h2>
+      <p>Complete at least the required fields. This form posts to <code>process.php</code> and shows a 
+        confirmation page (server-side processing).</p>
+
+      <form id="bookingForm" action="process.php" method="post" class="form-card" novalidate>
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="device">Device type</label>
+        <select id="device" name="device" required>
+          <option value="">--choose--</option>
+          <option value="Phone">Phone</option>
+          <option value="Laptop">Laptop</option>
+          <option value="Speaker">Speaker</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="desc">Short description of issue</label>
+        <textarea id="desc" name="desc" rows="4" required></textarea>
+
+        <label for="student">Are you a student?</label>
+        <select id="student" name="student">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+
+        <label for="date">Preferred drop-off date</label>
+        <input id="date" name="date" type="date">
+
+        <button type="submit">Submit booking</button>
+      </form>
+
+      <p class="small">Note: This form is required by the project rubric to use server-side
+         processing to show a confirmation display.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div><h4>Contact</h4><p>Email: hello@gamehutt.example</p></div>
+      <div><h4>References</h4><p><a href="references.html">References & image credits</a></p></div>
+      <div><h4>Hours</h4><p>Mon–Fri 9:00–17:00</p></div>
+    </div>
+    <p class="center small">&copy; Elenoa Taimani 2025 Game Hutt Tech Services</p>
+  </footer>
+</body>
+</html>
